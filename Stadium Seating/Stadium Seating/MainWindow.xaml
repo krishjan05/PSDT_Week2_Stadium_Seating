@@ -55,19 +55,22 @@
                Content="Sold:" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center"
                FontFamily="Verdana" FontSize="16"/>
         <TextBox Name="classASoldBox" Grid.Row="0" Grid.Column="1" 
-                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" />
+                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" 
+                 GotFocus="gotFocus"/>
         <!-- Row #2-->
         <Label Name="classBSoldLabel" Grid.Row="1" Grid.Column="1" 
                Content="Sold:" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center"
                FontFamily="Verdana" FontSize="16"/>
         <TextBox Name="classBSoldBox" Grid.Row="1" Grid.Column="1" 
-                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" />
+                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" 
+                 GotFocus="gotFocus"/>
         <!-- Row #3-->
         <Label Name="classCSoldLabel" Grid.Row="2" Grid.Column="1" 
                Content="Sold:" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center"
                FontFamily="Verdana" FontSize="16"/>
         <TextBox Name="classCSoldBox" Grid.Row="2" Grid.Column="1" 
-                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" />
+                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" 
+                 GotFocus="gotFocus"/>
 
         <!-- Displaying result -->
         <Label Name="displayLabel" Grid.Row="0" Grid.Column="2" Grid.RowSpan="3" Margin="5"

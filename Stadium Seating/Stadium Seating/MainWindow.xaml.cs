@@ -20,21 +20,49 @@ namespace Stadium_Seating
     /// </summary>
     public partial class MainWindow : Window
     {
+        private TextBox currentBox;
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void numberButton_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
             String tag = button.Tag.ToString();
-            displayLabel.Content = tag;
+
+            if (currentBox != null)
+            {
+                currentBox.AppendText(tag);
+                currentBox.Focus();
+            }
+            
         }
 
         private void backspaceButton_Click(object sender, RoutedEventArgs e)
         {
+            if (currentBox != null)
+            {
+                string currentText = currentBox.Text;
 
+                if (currentText.Length > 1)
+                {
+                    currentText = currentText.Substring(0, currentText.Length - 1);
+                }
+                else
+                {
+                    currentText = "";
+                }
+
+                currentBox.Text = currentText;
+                currentBox.Focus();
+            }
+        }
+
+        private void gotFocus(object sender, RoutedEventArgs e)
+        {
+            currentBox = (TextBox)sender;
         }
     }
 }
