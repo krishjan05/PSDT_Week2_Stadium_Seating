@@ -24,5 +24,17 @@ namespace Stadium_Seating
         {
             InitializeComponent();
         }
+
+        private void numberButton_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            String tag = button.Tag.ToString();
+            displayLabel.Content = tag;
+        }
+
+        private void backspaceButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
