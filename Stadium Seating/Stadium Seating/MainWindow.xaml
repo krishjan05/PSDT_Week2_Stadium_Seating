@@ -38,7 +38,8 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-
+        
+        <!-- Price labels -->
         <Label Name="classALable" Content="Class A&#xA;$ 15.00" Grid.Row="0" HorizontalAlignment="Center" 
                FontFamily="Verdana" FontSize="16"/>
         <Label Name="classBLable" Content="Class B&#xA;$ 12.00" Grid.Row="1" HorizontalAlignment="Center" 
@@ -46,5 +47,24 @@
         <Label Name="classCLable" Content="Class C&#xA;$  9.00" Grid.Row="2" HorizontalAlignment="Center" 
                FontFamily="Verdana" FontSize="16"/>
 
+        <!-- User input -->
+        <!-- Row #1-->
+        <Label Name="classASoldLabel" Grid.Row="0" Grid.Column="1" 
+               Content="Sold:" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center"
+               FontFamily="Verdana" FontSize="16"/>
+        <TextBox Name="classASoldBox" Grid.Row="0" Grid.Column="1" 
+                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" />
+        <!-- Row #2-->
+        <Label Name="classBSoldLabel" Grid.Row="1" Grid.Column="1" 
+               Content="Sold:" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center"
+               FontFamily="Verdana" FontSize="16"/>
+        <TextBox Name="classBSoldBox" Grid.Row="1" Grid.Column="1" 
+                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" />
+        <!-- Row #3-->
+        <Label Name="classCSoldLabel" Grid.Row="2" Grid.Column="1" 
+               Content="Sold:" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center"
+               FontFamily="Verdana" FontSize="16"/>
+        <TextBox Name="classCSoldBox" Grid.Row="2" Grid.Column="1" 
+                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" />
     </Grid>
 </Window>
