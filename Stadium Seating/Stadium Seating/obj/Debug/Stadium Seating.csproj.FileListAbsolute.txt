@@ -2,3 +2,13 @@ G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium S
 G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\Stadium Seating.csprojResolveAssemblyReference.cache
 G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\App.g.cs
 G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\Stadium Seating_MarkupCompile.cache
+G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\bin\Debug\Stadium Seating.exe
+G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\bin\Debug\Stadium Seating.pdb
+G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\MainWindow.g.cs
+G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\Stadium Seating_MarkupCompile.lref
+G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\MainWindow.baml
+G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\Stadium Seating.g.resources
+G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\Stadium_Seating.Properties.Resources.resources
+G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\Stadium Seating.csproj.GenerateResource.Cache
+G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\Stadium Seating.exe
+G:\Classes\PROG8010-ProgSoftDevTech\Assignments\Week 2\Stadium Seating\Stadium Seating\obj\Debug\Stadium Seating.pdb

@@ -1,7 +1,11 @@
 ﻿<!--
+    Assignment #2 , Group 1: Stadium Seating
+    Created by Oleksandr Rudavka #7609183 (roudique@gmail.com)
+    Conestoga College
     
-    
-    --!>
+    14th of September 2016
+    Origin: https://github.com/Roudique/PSDT_Week2_Stadium_Seating
+    -->
     
     <Window x:Class="Stadium_Seating.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -10,7 +14,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Stadium_Seating"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="300">
+        Title="Tickets" Height="400" Width="350"
+            ResizeMode="NoResize">
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -18,6 +23,28 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <!-- Rows with input/output -->
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+
+            <!-- Separator -->
+            <RowDefinition Height="10"/>
+
+            <!-- Keyboard -->
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label Name="classALable" Content="Class A&#xA;$ 15.00" Grid.Row="0" HorizontalAlignment="Center" 
+               FontFamily="Verdana" FontSize="16"/>
+        <Label Name="classBLable" Content="Class B&#xA;$ 12.00" Grid.Row="1" HorizontalAlignment="Center" 
+               FontFamily="Verdana" FontSize="16"/>
+        <Label Name="classCLable" Content="Class C&#xA;$  9.00" Grid.Row="2" HorizontalAlignment="Center" 
+               FontFamily="Verdana" FontSize="16"/>
 
     </Grid>
 </Window>
