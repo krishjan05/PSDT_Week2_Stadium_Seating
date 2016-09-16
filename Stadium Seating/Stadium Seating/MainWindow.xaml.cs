@@ -42,7 +42,6 @@ namespace Stadium_Seating
                 currentBox.AppendText(tag);
                 currentBox.Focus();
             }
-            
         }
 
         private void backspaceButton_Click(object sender, RoutedEventArgs e)
