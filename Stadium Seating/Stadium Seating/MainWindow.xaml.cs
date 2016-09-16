@@ -85,14 +85,19 @@ namespace Stadium_Seating
                 int totalCPrice = cClassTickets * classCPrice;
                 int totalPrice = totalAPrice + totalBPrice + totalCPrice;
 
-                
 
-                string output = "Price: \n" +
-                    "\nA Class:      $" + spacesforNumber(totalAPrice) + totalAPrice + ".00" +
-                    "\nB Class:      $" + totalBPrice + ".00" +
-                    "\nC Class:      $" + totalCPrice + ".00" +
-                    "\nTotal price: $"  + totalPrice  + ".00";
-                displayLabel.Content = output;
+                string staticOutput = "Price: \n" +
+                    "\nA Class:" +
+                    "\nB Class:" +
+                    "\nC Class:" +
+                    "\nTotal price: $";
+                string dynamicOutput = "\n\n" + totalAPrice + ".00\n" +
+                totalBPrice + ".00\n" +
+                totalCPrice + ".00\n" +
+                totalPrice  + ".00";
+
+                displayStaticLabel.Content = staticOutput;
+                displayDynamicBox.Text = dynamicOutput;
             } else
             {
                 MessageBox.Show("Wrong input! You can only use integer numbers without floating point");
@@ -111,16 +116,37 @@ namespace Stadium_Seating
             }
         }
 
-        private string spacesforNumber(int number)
+        private string spacesforNumber(int number, int total)
         {
-            int exponent = 0;
-            string spaces = "";
-            for (int total = number; total > 0; total /= 10)
+            int totalExp = 0;
+            for (int totalCount = total; totalCount > 0; totalCount /= 10)
             {
-                exponent++;
-                spaces = spaces + " ";
+                totalExp++;
             }
-            return spaces;
+
+            
+
+            int numberExp = 0;
+            for (int numberCount = number; numberCount > 0; numberCount /= 10)
+            {
+                numberExp++;
+            }
+
+            
+
+            int difference = totalExp - numberExp;
+            if (number == 0)
+            {
+                difference = totalExp - 1;
+            }
+
+            string toReturn = "";
+            for (int i = 0; i < difference; i++)
+            {
+                toReturn = toReturn + "o";
+            }
+
+            return toReturn;
         }
     }
 }
