@@ -115,38 +115,6 @@ namespace Stadium_Seating
                 }
             }
         }
-
-        private string spacesforNumber(int number, int total)
-        {
-            int totalExp = 0;
-            for (int totalCount = total; totalCount > 0; totalCount /= 10)
-            {
-                totalExp++;
-            }
-
-            
-
-            int numberExp = 0;
-            for (int numberCount = number; numberCount > 0; numberCount /= 10)
-            {
-                numberExp++;
-            }
-
-            
-
-            int difference = totalExp - numberExp;
-            if (number == 0)
-            {
-                difference = totalExp - 1;
-            }
-
-            string toReturn = "";
-            for (int i = 0; i < difference; i++)
-            {
-                toReturn = toReturn + "o";
-            }
-
-            return toReturn;
-        }
+        
     }
 }
