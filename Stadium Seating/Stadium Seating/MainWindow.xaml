@@ -14,7 +14,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Stadium_Seating"
         mc:Ignorable="d"
-        Title="Tickets" Height="500" Width="350"
+        Title="Tickets" Height="600" Width="500"
             ResizeMode="NoResize">
     <Grid>
 
@@ -26,9 +26,9 @@
 
         <Grid.RowDefinitions>
             <!-- Rows with input/output -->
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
 
             <!-- Separator -->
             <RowDefinition Height="60"/>
@@ -55,29 +55,30 @@
                Content="Sold:" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center"
                FontFamily="Verdana" FontSize="16"/>
         <TextBox Name="classASoldBox" Grid.Row="0" Grid.Column="1" 
-                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" 
-                 GotFocus="gotFocus"/>
+                 Height="30" VerticalAlignment="Bottom" Margin="5,0,5,5" 
+                 GotFocus="gotFocus" FontFamily="Verdana" FontSize="16"/>
         <!-- Row #2-->
         <Label Name="classBSoldLabel" Grid.Row="1" Grid.Column="1" 
                Content="Sold:" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center"
                FontFamily="Verdana" FontSize="16"/>
         <TextBox Name="classBSoldBox" Grid.Row="1" Grid.Column="1" 
-                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" 
-                 GotFocus="gotFocus"/>
+                 Height="30" VerticalAlignment="Bottom" Margin="5,0,5,5" 
+                 GotFocus="gotFocus" FontFamily="Verdana" FontSize="16"/>
         <!-- Row #3-->
         <Label Name="classCSoldLabel" Grid.Row="2" Grid.Column="1" 
                Content="Sold:" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center"
                FontFamily="Verdana" FontSize="16"/>
         <TextBox Name="classCSoldBox" Grid.Row="2" Grid.Column="1" 
-                 Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5" 
-                 GotFocus="gotFocus"/>
+                 Height="30" VerticalAlignment="Bottom" Margin="5,0,5,5" 
+                 GotFocus="gotFocus" FontFamily="Verdana" FontSize="16"/>
 
         <!-- Displaying result -->
         <Label Name="displayLabel" Grid.Row="0" Grid.Column="2" Grid.RowSpan="3" Margin="5"
-               HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana" FontSize="14"/>
+               HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Verdana"/>
 
         <Button Name="calculateButton" Grid.Row="3" Grid.ColumnSpan="3" Margin="40, 10"
-                Content="Calculate" FontFamily="Verdana" FontSize="17"/>
+                Content="Calculate" FontFamily="Verdana" FontSize="17"
+                Click="calculateButton_Click"/>
 
         <!-- Keyboard -->
         <Button Name="oneButton" Content="1"
